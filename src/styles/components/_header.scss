@@ -1,0 +1,264 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  background: var(--white-color);
+}
+
+.header-mobil {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 16px;
+
+    @include mq(tab) {
+      display: none;
+    }
+  }
+
+  &__menu-button {
+
+    svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--black-color);
+    }
+  }
+
+  &__logo {
+
+    svg {
+      width: 85px;
+      height: 38px;
+    }
+  }
+
+  &__locale-button {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+  }
+
+  &__cart-button {
+
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: transparent;
+      stroke: var(--black-color);
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+}
+
+.header-desk {
+  display: none;
+
+  @include mq(tab) {
+    display: block;
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 38px;
+    border-bottom: 1px solid var(--grey-color);
+    background-color: var(--silver-color);
+  }
+
+  &__nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    a {
+      color: var(--black-color);
+      transition: all var(--transition);
+
+      &:hover {
+        color: var(--brand-orange-color);
+      }
+    }
+  }
+
+  &__navbar-locale {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__locale-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all var(--transition);
+
+    svg {
+      width: 15px;
+      height: 15px;
+      transition: all var(--transition);
+    }
+
+    &:hover {
+      color: var(--brand-orange-color);
+
+      svg {
+        fill: var(--brand-orange-color);
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    padding: 26px 38px;
+  }
+
+  &__logo {
+
+    svg {
+      width: 104px;
+      height: 46px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 18px 38px;
+    text-transform: uppercase;
+    border: 1px solid var(--grey-color);
+    background-color: var(--white-color);
+    border-radius: 50px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+    transition: all var(--transition);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      transform: translate(-50%, 50%) rotate(45deg);
+      border-radius: 1px;
+      transition: all var(--transition);
+    }
+
+    &.red {
+      color: var(--brand-orange-color);
+
+      &:hover {
+        border-color: var(--brand-orange-color);
+        background-color: var(--brand-orange-color);
+        color: var(--white-color);
+
+        &::after {
+          background-color: var(--brand-orange-color);
+        }
+      }
+    }
+
+    &.red-border {
+      color: var(--brand-orange-color);
+      border: 1px solid var(--brand-orange-color);
+
+      &:hover {
+        background-color: var(--brand-orange-color);
+        color: var(--white-color);
+      }
+
+      &:active {
+        border-color: var(--active-orange-color);
+        background-color: var(--active-orange-color);
+      }
+    }
+
+    &.green {
+      color: var(--brand-green-color);
+
+      &:hover {
+        border-color: var(--brand-green-color);
+        background-color: var(--brand-green-color);
+        color: var(--white-color);
+
+        &::after {
+          background-color: var(--brand-green-color);
+        }
+      }
+    }
+  }
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+    width: 652px;
+    height: 54px;
+    border: 1px solid var(--grey-color);
+    border-radius: 83px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+    padding: 20px;
+
+    input[type="text"] {
+      flex-grow: 1;
+      font-size: 16px;
+      padding: 8px;
+      border: none;
+      outline: none;
+      color: var(--dark-color);
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      .divider {
+        width: 1px;
+        height: 18px;
+        background-color: var(--dark-grey-color);
+      }
+
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+
+      .search {
+        svg {
+          fill: transparent;
+          stroke: var(--black-color);
+        }
+      }
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__toolbar-btn {
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: transparent;
+      stroke: var(--black-color);
+    }
+  }
+}

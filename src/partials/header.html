@@ -1,0 +1,94 @@
+<header class="header">
+  <div class="header-mobil">
+    <div class="header-mobil__container">
+      <div class="header-mobil__left">
+        <button aria-label="menu button" class="header-mobil__menu-button js-burger-menu">
+          <svg>
+            <use href="./images/sprite.svg#icon-burger-menu" />
+          </svg>
+        </button>
+        <a aria-label="Logo" class="header-mobil__logo" href="/">
+          <svg>
+            <use href="./images/sprite.svg#icon-logo" />
+          </svg>
+        </a>
+      </div>
+      <div class="header-mobil__right">
+        <button aria-label="locale button" class="header-mobil__locale-button">RU</button>
+        <button aria-label="cart button" class="header-mobil__cart-button">
+          <svg>
+            <use href="./images/sprite.svg#icon-card" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header-desk">
+    <div class="header-desk__container">
+      <nav class="header-desk__navbar">
+        <ul class="header-desk__nav-links">
+          <li><a href="#">Как работает Yolo</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">О компании</a></li>
+        </ul>
+        <div class="header-desk__navbar-locale">
+          <button aria-label="locale button" class="header-desk__locale-button">Тбилиси
+            <svg>
+              <use href="./images/sprite.svg#icon-arrow" />
+            </svg>
+          </button>
+          <button aria-label="locale button" class="header-desk__locale-button">RU
+            <svg>
+              <use href="./images/sprite.svg#icon-arrow" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div class="header-desk__main">
+        <a aria-label="Logo" class="header-desk__logo" href="/">
+          <svg>
+            <use href="./images/sprite.svg#icon-logo" />
+          </svg>
+        </a>
+        <button class="header-desk__button red">Впечатления</button>
+        <button class="header-desk__button green">Афиша</button>
+        <div class="header-desk__search-box">
+          <input placeholder="Поиск" type="text" />
+          <div class="icons">
+            <button>
+              <svg>
+                <use href="./images/sprite.svg#icon-microphone" />
+              </svg>
+            </button>
+            <div class="divider"></div>
+            <button class="search">
+              <svg>
+                <use href="./images/sprite.svg#icon-search" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="header-desk__button red-border">Активировать сертификат</button>
+        <div class="header-desk__toolbar">
+          <button class="header-desk__toolbar-btn">
+            <svg>
+              <use href="./images/sprite.svg#icon-card" />
+            </svg>
+          </button>
+          <button class="header-desk__toolbar-btn">
+            <svg>
+              <use href="./images/sprite.svg#icon-heart" />
+            </svg>
+          </button>
+          <button class="header-desk__toolbar-btn">
+            <svg>
+              <use href="./images/sprite.svg#icon-person" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<include src="./partials/hero.html" />

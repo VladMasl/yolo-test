@@ -1,0 +1,17 @@
+@import "~modern-normalize/modern-normalize";
+
+body {
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.05em;
+
+
+  background-color: var(--main-white-color);
+  overflow-x: hidden;
+
+
+}
