@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 21px 16px;
 
-    @include mq(tab) {
+    @include mq(desk) {
       display: none;
     }
   }
@@ -67,7 +67,7 @@
 .header-desk {
   display: none;
 
-  @include mq(tab) {
+  @include mq(desk) {
     display: block;
   }
 
@@ -125,6 +125,7 @@
   &__main {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 26px 38px;
   }
 

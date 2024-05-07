@@ -1,2 +1,2 @@
 import './styles/main.scss';
-import './js/burgerMenu.js';
+import './js/index.js';
