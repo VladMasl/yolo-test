@@ -1,4 +1,4 @@
-import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 export default {
@@ -10,18 +10,11 @@ export default {
   cache() {
     this.settings = {
       slider: {
-        container: '#slider',
-        buttons: {
-          prevEl: '.swiper__controls .swiper__button-prev',
-          nextEl: '.swiper__controls .swiper__button-next',
-        },
-        pagination: {
-          el: '.swiper__pagination',
-        },
+        container: '#slider-impression-bottom',
       },
       tabs: {
-        slide: '.js-banner-direction-slide',
-        button: '.js-banner-direction-click',
+        slide: '.js-direction-slide',
+        button: '.js-direction-click',
       },
       disabledClass: 'is-disabled',
       activeClass: 'is-active',
@@ -56,23 +49,14 @@ export default {
   },
   get swiperOptions() {
     return {
-      modules: [Navigation, Autoplay, Pagination],
       loop: false,
       slidesPerView: 1,
       spaceBetween: 16,
-      breakpoints: 1,
-      navigation: {
-        nextEl: this.settings.slider.buttons.nextEl,
-        prevEl: this.settings.slider.buttons.prevEl,
-        disabledClass: this.settings.disabledClass,
-      },
-      pagination: {
-        el: this.settings.slider.pagination.el,
-        clickable: true,
-      },
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
       },
       speed: 1100,
     };

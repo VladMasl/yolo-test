@@ -19,31 +19,37 @@
 
 .accordion {
   &__item {
-    background-color: #F4ECE0;
-    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--light-color);
+    transition: all var(--transition);
 
     &.is-active {
-      background-color: var(--white-color);
-      border: 1px solid sandybrown;
+      background-color: var(--brand-orange-color);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.20);
     }
 
     + .accordion__item {
-      margin-top: 20px;
+      margin-top: 16px;
+
+      @include mq(desk) {
+        margin-top: 12px;
+      }
     }
   }
 
   &__title {
     position: relative;
     display: block;
-    padding: 20px 40px 20px 20px;
-    font-size: 16px;
+    padding: 18px 32px 18px 24px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
+    transition: all var(--transition);
 
-    @media (min-width: 1024px) {
-      font-size: 18px;
+    @include mq(desk) {
+      padding: 24px;
+      font-size: 16px;
       font-weight: 400;
-      line-height: 24px;
     }
 
     &::before,
@@ -54,21 +60,42 @@
       content: '';
       background: var(--black-color);
       transform: translateY(-50%);
+      transition: all var(--transition);
     }
 
     &::before {
-      right: 20px;
-      width: 15px;
+      right: 17px;
+      width: 18px;
       height: 1px;
     }
 
     &::after {
-      right: 27px;
+      right: 25px;
       width: 1px;
-      height: 15px;
+      height: 18px;
+    }
+
+    @include mq(desk) {
+      &::before {
+        right: 20px;
+        width: 21px;
+        height: 1px;
+      }
+
+      &::after {
+        right: 30px;
+        width: 1px;
+        height: 21px;
+      }
     }
 
     &.is-active {
+      color: var(--white-color);
+
+      &::before {
+        background-color: var(--white-color);
+      }
+
       &::after {
         display: none;
       }
@@ -77,13 +104,27 @@
 
   &__item-content {
     display: none;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
+    padding: 15px 26px;
+    font-size: 12px;
+    transition: all var(--transition);
+
+    @include mq(tab) {
+      padding: 24px 24px 28px 24px;
+      font-size: 12px;
+    }
 
     .accordion__title.is-active + & {
       display: block;
+      border-radius: 0 0 20px 20px;
+      background-color: var(--white-color)
     }
+  }
+
+  &__item-description {
+    max-width: 1720px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+
   }
 }

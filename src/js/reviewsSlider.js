@@ -1,4 +1,4 @@
-import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 export default {
@@ -10,18 +10,15 @@ export default {
   cache() {
     this.settings = {
       slider: {
-        container: '#slider',
+        container: '#slider-reviews',
         buttons: {
-          prevEl: '.swiper__controls .swiper__button-prev',
-          nextEl: '.swiper__controls .swiper__button-next',
-        },
-        pagination: {
-          el: '.swiper__pagination',
+          prevEl: '.reviews__slider-controls .reviews__button-prev',
+          nextEl: '.reviews__slider-controls .reviews__button-next',
         },
       },
       tabs: {
-        slide: '.js-banner-direction-slide',
-        button: '.js-banner-direction-click',
+        slide: '.js-direction-slide',
+        button: '.js-direction-click',
       },
       disabledClass: 'is-disabled',
       activeClass: 'is-active',
@@ -56,23 +53,20 @@ export default {
   },
   get swiperOptions() {
     return {
-      modules: [Navigation, Autoplay, Pagination],
+      modules: [Navigation],
       loop: false,
       slidesPerView: 1,
       spaceBetween: 16,
-      breakpoints: 1,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+        },
+      },
       navigation: {
         nextEl: this.settings.slider.buttons.nextEl,
         prevEl: this.settings.slider.buttons.prevEl,
         disabledClass: this.settings.disabledClass,
-      },
-      pagination: {
-        el: this.settings.slider.pagination.el,
-        clickable: true,
-      },
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
       },
       speed: 1100,
     };

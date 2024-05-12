@@ -1,17 +1,57 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
      xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <symbol id="icon-slider-arrow-right" viewBox="0 0 16 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.465996 1.48505C0.270734 1.28979 0.272824 0.975326 0.470665 0.782677C0.668506 0.590028 0.987179 0.592147 1.18244 0.787409L0.465996 1.48505ZM1.18244 0.787409L7.5464 7.15137L6.82996 7.84901L0.465996 1.48505L1.18244 0.787409Z"
-                  fill="#202020"/>
-            <path d="M7.1875 7.5L0.823539 13.864" stroke="#202020" stroke-linecap="round"/>
+        <symbol id="icon-slider-heart" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.9997 7.95741C12.0088 4.50213 7.07503 4.09887 4.57106 7.32621L4.22303 7.77478C2.10535 10.5042 2.41112 14.3966 4.92902 16.7619L12.8443 24.1974C12.8519 24.2046 12.8596 24.2118 12.8674 24.2191C12.9831 24.328 13.1225 24.4591 13.258 24.5566C13.4223 24.6749 13.6703 24.812 13.9997 24.812C14.3292 24.812 14.5771 24.6749 14.7414 24.5566C14.8769 24.4591 15.0163 24.328 15.1321 24.2191C15.1399 24.2118 15.1475 24.2046 15.1551 24.1974L23.0704 16.7619C25.5883 14.3966 25.8941 10.5042 23.7764 7.77478L23.4283 7.32621C20.9244 4.09887 15.9906 4.50213 13.9997 7.95741Z"
+                  stroke="#FD5137"/>
         </symbol>
-        <symbol id="icon-slider-arrow-left" viewBox="0 0 16 8" fill="none"
+        <symbol id="icon-slider-arrow-right" width="44" height="44" viewBox="0 0 44 44"
                 xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.534 13.5149C7.72927 13.7102 7.72718 14.0247 7.52933 14.2173C7.33149 14.41 7.01282 14.4079 6.81756 14.2126L7.534 13.5149ZM6.81756 14.2126L0.453598 7.84863L1.17004 7.15099L7.534 13.5149L6.81756 14.2126Z"
+            <g filter="url(#filter0_d_171_1367)">
+                <ellipse cx="26" cy="26" rx="18" ry="18" transform="rotate(-180 26 26)"/>
+            </g>
+            <path d="M23.466 19.4851C23.2707 19.2898 23.2728 18.9753 23.4707 18.7827C23.6685 18.59 23.9872 18.5921 24.1824 18.7874L23.466 19.4851ZM24.1824 18.7874L30.5464 25.1514L29.83 25.849L23.466 19.4851L24.1824 18.7874Z"
                   fill="#202020"/>
-            <path d="M0.8125 7.5L7.17646 1.13604" stroke="#202020" stroke-linecap="round"/>
+            <path d="M30.1875 25.5L23.8235 31.864" stroke="#202020" stroke-linecap="round"/>
+            <defs>
+                <filter id="filter0_d_171_1367" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                   result="hardAlpha"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_171_1367"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_171_1367" result="shape"/>
+                </filter>
+            </defs>
+        </symbol>
+
+        <symbol id="icon-slider-arrow-left" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_171_1368)">
+                <ellipse cx="26" cy="26" rx="18" ry="18"/>
+            </g>
+            <path d="M28.534 32.5149C28.7293 32.7102 28.7272 33.0247 28.5293 33.2173C28.3315 33.41 28.0128 33.4079 27.8176 33.2126L28.534 32.5149ZM27.8176 33.2126L21.4536 26.8486L22.17 26.151L28.534 32.5149L27.8176 33.2126Z"
+                  fill="#202020"/>
+            <path d="M21.8125 26.5L28.1765 20.136" stroke="#202020" stroke-linecap="round"/>
+            <defs>
+                <filter id="filter0_d_171_1368" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                   result="hardAlpha"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_171_1368"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_171_1368" result="shape"/>
+                </filter>
+            </defs>
         </symbol>
         <symbol id="icon-arrow-right" viewBox="0 0 16 8">
             <path d="M12.3536 4.35355C12.5488 4.15829 12.5488 3.84171 12.3536 3.64645L9.17157 0.464466C8.97631 0.269204 8.65973 0.269204 8.46447 0.464466C8.2692 0.659728 8.2692 0.976311 8.46447 1.17157L11.2929 4L8.46447 6.82843C8.2692 7.02369 8.2692 7.34027 8.46447 7.53553C8.65973 7.7308 8.97631 7.7308 9.17157 7.53553L12.3536 4.35355ZM0 4.5H12V3.5H0V4.5Z"
@@ -83,8 +123,8 @@
                   d="M25.143 26.286v-1.837c0-3.043-2.924-5.51-6.531-5.51h-5.224c-3.607 0-6.531 2.467-6.531 5.51v1.837M20.571 10.122c0 1.169-0.482 2.29-1.339 3.117s-2.020 1.291-3.232 1.291-2.375-0.464-3.232-1.291c-0.857-0.827-1.339-1.948-1.339-3.117s0.482-2.29 1.339-3.117c0.857-0.827 2.020-1.291 3.232-1.291s2.375 0.464 3.232 1.291c0.857 0.827 1.339 1.948 1.339 3.117z"></path>
         </symbol>
         <symbol id="icon-plus" viewBox="0 0 32 32">
-            <path fill="#fff" style="fill: var(--color2, #fff)" d="M15 8h2v16h-2v-16z"></path>
-            <path fill="#fff" style="fill: var(--color2, #fff)" d="M24 15v2h-16v-2h16z"></path>
+            <path d="M15 8h2v16h-2v-16z"></path>
+            <path d="M24 15v2h-16v-2h16z"></path>
         </symbol>
         <symbol id="icon-search" viewBox="0 0 32 32">
             <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842"

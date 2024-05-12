@@ -1,0 +1,142 @@
+.consultation {
+  padding-top: 36px;
+
+  @include mq(desk) {
+    padding-top: 60px;
+  }
+
+  &__inner {
+    padding: 38px 28px;
+    border-radius: 10px;
+    background-color: var(--light-color);
+
+    @include mq(desk) {
+      padding: 63px 30px 70px 30px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--black-color);
+
+    @include mq(desk) {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--black-color);
+
+    @include mq(desk) {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+
+    @include mq(tab) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include mq(desk) {
+      gap: 38px;
+      margin-top: 43px;
+    }
+  }
+
+  label {
+    width: 100%;
+
+    @include mq(tab) {
+      max-width: 262px;
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 48px;
+    padding: 18px 20px;
+    border: none;
+    outline: none;
+    border-radius: 63px;
+    background: var(--white-color);
+    transition: all var(--transition);
+
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &:focus {
+      border: 1px solid #D4CDC2;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--dark-color);
+    }
+
+    @include mq(tab) {
+      max-width: 262px;
+    }
+    @include mq(desk) {
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__form-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    padding: 15px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+
+    border-radius: 63px;
+    color: var(--white-color);
+    background-color: var(--brand-orange-color);
+    transition: all var(--transition);
+
+    @include mq(tab) {
+      max-width: 262px;
+    }
+
+    @include mq(desk) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(253, 81, 55, 0.50);
+    }
+
+    &:active {
+      background-color: var(--active-orange-color);
+    }
+  }
+}
